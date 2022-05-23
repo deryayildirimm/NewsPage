@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="nositelinkssearchbox" />
+    <title>HomePage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleforpages.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <style>
+        img:hover {
+            -ms-transform: scale(1.1);
+            /* IE 9 */
+            -webkit-transform: scale(1.1);
+            /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .sticky-nav {
+            padding: 4px;
+            z-index: 1;
+            background-color: black;
+        }
+
+        a.nav-link:hover,
+        .navbar-brand:hover {
+            color: #184e77;
+        }
+
+        a.nav-link.active {
+            text-decoration: underline;
+            color: #184e77;
+            font-size: 20px;
+            letter-spacing: 0.5px;
+            padding: 4px;
+            font-weight: 600;
+
+        }
+
+        .container {
+            margin-top: 70px;
+        }
+
+        button.btn-show {
+            height: 30px;
+            width: fit-content;
+            box-sizing: border-box;
+            text-decoration: underline;
+            border: transparent;
+            border-radius: none;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #0a3d62;
+            background-color: #fff;
+            cursor: pointer;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav" class="sticky-nav">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="Home.html">World News</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="News.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Sport.html">Sport</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Travel.html">Travel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Culture.html">Culture</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="ContactMe.html">ContactMe</a></li>
+                                <li><a class="dropdown-item" href="AboutMe.html">AboutMe</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Signin.html">Sign In </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <div class="container  w-75 ">
+        <div class="row  w-100">
+            <h4> <a class="row-title" href="News.html">NEWS</a></h4>
+            <div class="col">
+                <img src="images/queen.jpg" alt="Royal Family honours duke's 'humour and humanity'"
+                    style="width: 100%;">
+                <h5>Royal Family honours duke's 'humour and humanity'</h5>
+                <p>
+                    The funeral congregation was socially distanced
+                    <button class="btn-show" type="button" data-toggle="collapse" data-target="#collapseExample"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Show
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        with the Queen seated alone,
+                        because of Covid rules.
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <img src="images/queen2.jpg" alt="" style="width: 100%;">
+                <h5>William and Harry seeing chatting after funeral</h5>
+                <p>
+                    The brothers spoke as they left St George's Chapel in Windsor,
+                    <button class="btn-show" type="button" data-toggle="collapse" data-target="#collapseExample1"
+                        aria-expanded="false" aria-controls="collapseExample1">
+                        Show
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample1">
+                    <div class="card card-body">
+                        alongside the Duchess of
+                        Cambridge.
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <img src="images/covid.jpg" alt="" style="width: 100%;">
+                <h5>Global Covid deaths pass three millions</h5>
+                <p>
+                    The number of people who have died worldwide in the Covid-19 pandemic has
+                    <button class="btn-show" type="button" data-toggle="collapse" data-target="#collapseExample2"
+                        aria-expanded="false" aria-controls="collapseExample2">
+                        Show
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample2">
+                    <div class="card card-body">
+                        surpassed three
+                        million, according to Johns Hopkins University.
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+        <div class="row w-100">
+            <h4><a class="row-title" href="Sport.html">SPORT</a></h4>
+            <div class="col">
+                <img src="images/sport.jpg" alt="Barcelona won the Copa del Rey for a record-extending 31st time"
+                    style="width: 100%;">
+                <h5>Barcelona won the Copa del Rey for a record-extending 31st time</h5>
+                <p id="linksport">
+                    Barcelona scored four goals in 12 minutes - including a brilliant strike from
+                    <button class="btn-show" type="button" data-toggle="collapse" data-target="#collapseExample4"
+                        aria-expanded="false" aria-controls="collapseExample4">
+                        Show
+                    </button>
+                </p>
+
+                <div class="collapse" id="collapseExample4">
+                    <div class="card card-body">
+                        Lionel Messi - to
+                        thrash Athletic Bilbao and win the Copa del Rey.
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/sport2.jpg" alt="" style="width: 100%;">
+                <h5>Chelsea 1-0 Man City: Thomas Tuchel proving Roman Abramovich's well-worn formula works</h5>
+                <p>
+                    When Chelsea owner Roman Abramovich proved no-one's history at the club could
+                    <button class="btn-show" type="button" data-toggle="collapse" data-target="#collapseExample5"
+                        aria-expanded="false" aria-controls="collapseExample5">
+                        Show
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample5">
+                    <div class="card card-body">
+                        shield them from his ruthless pursuit of success by sacking the iconic figure of manager Frank
+                        Lampard in
+                        January, he was following a well-worn formula.
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/sport3.jpg" alt="" style="width: 100%;">
+                <h5>IPL: Sunrisers Hyderabad beaten by Mumbai Indians despite Jonny Bairstow knock</h5>
+                <p id="linksport3">
+                    Mumbai Indians eked out a 13-run Indian Premier League win over Sunrisers Hyderabad,
+                    <button class="btn-show" type="button" data-toggle="collapse" data-target="#collapseExample6"
+                        aria-expanded="false" aria-controls="collapseExample6">
+                        Show
+                    </button>
+                </p>
+
+                <div class="collapse" id="collapseExample6">
+                    <div class="card card-body">
+                        who lost their way after Jonny Bairstow's sparkling 43.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row  w-100">
+            <h4><a class="row-title" href="Culture.html">CULTURE</a></h4>
+            <div class="col">
+                <img src="images/culture-a" alt="" style="width: 100%;">
+                <h5>The mystery of 'lost' rock genius Lee Mavers</h5>
+                <p>
+                    Just over 30 years ago, band The La's released their sole LP – a masterpiece that shaped guitar
+                    music.
+                    <button class="btn-show" type="button" data-toggle="collapse" data-target="#collapseExample7"
+                        aria-expanded="false" aria-controls="collapseExample7">
+                        Show
+                    </button>
+                </p>
+
+                <div class="collapse" id="collapseExample7">
+                    <div class="card card-body">
+                        But its brilliant frontman has been elusive ever since, writes Shaun Curran.
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/culture2-a" alt="" style="width: 100%;">
+                <h6>The forgotten story of America's first black superstars </h6>
+                <p>
+                    On Valentine's Day 1920, a little over a century ago, a 28-year-old singer
+                    <button class="btn-show" type="button" data-toggle="collapse" data-target="#collapseExample8"
+                        aria-expanded="false" aria-controls="collapseExample8">
+                        Show
+                    </button>
+                </p>
+
+                <div class="collapse" id="collapseExample8">
+                    <div class="card card-body">
+                        named Mamie Smith walked into a recording studio in New York City and made history.
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/culture3-a" alt="" style="width: 100%;">
+                <h5>Malcolm & Marie is a 'vibrant, perceptive film'</h5>
+                <p>
+                    Zendaya and John David Washington both deserve awards buzz for their
+                    <button class="btn-show" type="button" data-toggle="collapse" data-target="#collapseExample9"
+                        aria-expanded="false" aria-controls="collapseExample9">
+                        Show
+                    </button>
+                </p>
+
+                <div class="collapse" id="collapseExample9">
+                    <div class="card card-body">
+                        "dynamic, sensitive performances" in this intense two-character film which keeps the audience
+                        off-guard.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row  w-100">
+            <h4><a class="row-title" href="Travel.html">TRAVEL</a></h4>
+            <div class="col">
+                <img src="images/travel3.jpg" alt="" style="width: 100%;">
+                <h5>The Asian city obsessed with hygiene</h5>
+                <p>
+                    These quintessentially Singaporean values have been put to the test during Covid-19,
+                    <button class="btn-show" type="button" data-toggle="collapse" data-target="#collapseExample10"
+                        aria-expanded="false" aria-controls="collapseExample10">
+                        Show
+                    </button>
+
+                </p>
+                <div class="collapse" id="collapseExample10">
+                    <div class="card card-body">
+                        when good public hygiene practice can be a matter of life and death.
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/travel.jpg" alt="Barcelona won the Copa del Rey for a record-extending 31st time"
+                    style="width: 100%;">
+                <h5>The US'S lost, ancient megacity</h5>
+                <p>
+                    In the ancient Mississippian settlement of Cahokia,
+                    <button class="btn-show" type="button" data-toggle="collapse" data-target="#collapseExample11"
+                        aria-expanded="false" aria-controls="collapseExample11">
+                        Show
+                    </button>
+                </p>
+
+                <div class="collapse" id="collapseExample11">
+                    <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                        proident.
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/travel2.jpg" alt="" style="width: 100%;">
+                <h5>The enduring allure of lost cities</h5>
+                <p>
+                    Tales of mysterious ruins have long enchanted travellers from afar,
+                    <button class="btn-show" type="button" data-toggle="collapse" data-target="#collapseExample12"
+                        aria-expanded="false" aria-controls="collapseExample12">
+                        Show
+                    </button>
+
+                <div class="collapse" id="collapseExample12">
+                    <div class="card card-body">
+                        but those stories may hide something even more fascinating – and adverse.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>World News</h3>
+                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula
+                            rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum
+                            vel in justo.</p>
+                    </div>
+                    <div class="col item social"><a href="https://www.facebook.com"><em
+                                class="fa fa-facebook"></em></a><a href="https://www.twitter.com"><em
+                                class="fa fa-twitter"></em></a><a href="https://www.snapchat.com"><em
+                                class="fa fa-snapchat-ghost"></em></a><a href="https://www.instagram.com"><em
+                                class="fa fa-instagram"></em></a></div>
+                </div>
+                <p class="copyright">World News © 2012</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
